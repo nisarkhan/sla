@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="userApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SLA Unavailability Web Application</title> 
+  
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href=" ~/assets/css/main.css" rel="stylesheet">
+    <link href="~/assets/css/main.datatable.css" rel="stylesheet">  
+    <link href="~/Assets/css/font-awesome.min.css" rel="stylesheet" />   
+
+    <link href="~/Assets/css/loading.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--header starts-->
+    @Html.Partial("~/Views/Shared/partial/_header.cshtml")
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            @*<p style="text-align:center">Copyright &copy; 2015 Xerox All Rights Reserved.</p>*@
+        </footer>
+    </div> 
+   
+    <script src="~/Assets/scripts/jquery.min.js"></script>  
+    <script src="~/Assets/scripts/bootstrap.js"></script>  
+
+    <script src="~/Assets/scripts/jquery.dataTables.min.js"></script> 
+
+    <!--datetimepicker-->
+    @*<link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.15.35/css/bootstrap-datetimepicker.css" rel="stylesheet">*@
+    <link href="~/Assets/css/datepicker/bootstrap-datetimepicker.css" rel="stylesheet" />
+    @*<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>*@
+    <script src="~/Assets/css/datepicker/moment.min.js"></script>
+    @*<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.15.35/js/bootstrap-datetimepicker.min.js"></script>*@
+    <script src="~/Assets/css/datepicker/bootstrap-datetimepicker.min.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>    
+ 
+

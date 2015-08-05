@@ -1,0 +1,35 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="@Url.Action("Index", "Home")">
+                <img src='@Url.Content("~/Assets/images/atos_logo.jpg")'  />
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                @*<li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Client <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("SLA List", "Index", "Home")</li>
+                        <li class="divider"></li> 
+                    </ul>
+                </li>*@
+               
+            </ul>
+            @*@Html.Partial("~/Views/Shared/_loginPartial.cshtml")*@ 
+            <div class="navbar-collapse collapse">
+                <p class="nav navbar-text navbar-right">Hello, @User.Identity.Name!</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
